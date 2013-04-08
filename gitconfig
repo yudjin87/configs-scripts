@@ -9,6 +9,19 @@
 	status = auto
 	branch = auto
 	interactive = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red
+	new = cyan
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [core]
 	autocrlf = true
 	whitespace = cr-at-eol
@@ -18,5 +31,14 @@
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	la = "!git config -l | grep alias | cut -c 7-"
 	logtree="log --graph --oneline --decorate --all"
+	st = status -sb
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	ready = rebase -i @{u}
+	standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author Eugene
+	purr = pull --rebase
