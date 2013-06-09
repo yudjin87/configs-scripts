@@ -42,3 +42,13 @@
 	ready = rebase -i @{u}
 	standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author Eugene
 	purr = pull --rebase
+
+[diff]
+	external = git-meld
+	
+# To use git-meld create script at /usr/local/bin/git-meld:
+# 
+#   #!/bin/bash
+#   meld $2 $5 
+#
+
