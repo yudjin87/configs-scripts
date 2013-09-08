@@ -1,0 +1,11 @@
+apt-get purge gnome*
+apt-get autoremove 
+
+apt-get remove iceweasel klipper pulseaudio alsa-base alsamixergui alsa-utils
+
+apt-get install kate g++ gdb make meld openjdk-7-jdk openjdk-7-jre openjdk-7-jre-lib libcurl3 dolphin ark konsole git gitg kwrite kdesudo galculator kmix libreoffice
+gwenview okular  tcpdump sqlitebrowser deluge deluged smplayer djview4 partitionmanager unrar-free lshw lshw-gtk
+
+# To enable start GUI apps from super user:
+kdesudo kwrite /etc/pacman.conf
+
