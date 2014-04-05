@@ -1,1 +1,7 @@
-apt-get install svn vpnc virtualbox-ose-dkms linux-headers-amd64
+dpkg --add-architecture i386
+
+apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion 
+
+# For corporation usage:
+apt-get install subversion vpnc icedove
+
