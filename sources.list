@@ -19,5 +19,3 @@ deb http://opensource.wandisco.com/debian/ wheezy svn18
 deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
 
 deb http://ftp.debian.org/debian wheezy-backports main contrib non-free
-
-deb http://http.debian.net/debian/ jessie main contrib non-free
