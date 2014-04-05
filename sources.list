@@ -1,0 +1,23 @@
+deb http://ftp.ua.debian.org/debian/ wheezy main contrib non-free
+
+deb http://security.debian.org/ wheezy/updates main contrib non-free
+
+# wheezy-updates, previously known as 'volatile'
+deb http://ftp.ua.debian.org/debian/ wheezy-updates main contrib non-free
+deb http://ftp.ua.debian.org/debian/ wheezy-proposed-updates contrib non-free main
+
+# Emdebian cross toolchains
+# deb http://www.emdebian.org/debian/ wheezy main
+
+# Debian multimedia
+deb http://www.deb-multimedia.org wheezy main non-free
+
+# SVN
+deb http://opensource.wandisco.com/debian/ wheezy svn18
+
+# Oracle Virtualbox
+deb http://download.virtualbox.org/virtualbox/debian wheezy contrib
+
+deb http://ftp.debian.org/debian wheezy-backports main contrib non-free
+
+deb http://http.debian.net/debian/ jessie main contrib non-free
