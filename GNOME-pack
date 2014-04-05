@@ -1,10 +1,10 @@
 dpkg --add-architecture i386
 
 # Base instalations
-apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion 
+apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion deluge
 
 # For corporation usage:
-apt-get install subversion vpnc icedove
+apt-get install subversion vpnc icedove 
 
 # For HP ProBook laptop:
 apt-get install firmware-iwlwifi
