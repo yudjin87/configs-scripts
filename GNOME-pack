@@ -1,7 +1,10 @@
 dpkg --add-architecture i386
 
 # Base instalations
-apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion deluge
+apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion deluge cmake 
+
+# For VLC
+apt-get install libavformat54 vlc
 
 # For corporation usage:
 apt-get install subversion vpnc icedove 
