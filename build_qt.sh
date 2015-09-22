@@ -8,8 +8,7 @@ tar -zxvf ~/Downloads/qt-everywhere-opensource-src-$QT_VERSION.tar.gz -C ~/devel
 cd ~/devel/qt/qt$QT_VERSION-debug
 mv qt-everywhere-opensource-src-$QT_VERSION/* ./
 rm -r qt-everywhere-opensource-src-$QT_VERSION/
-
-echo yes | ./configure -debug -force-debug-info -opensource -nomake examples -nomake tests -prefix /opt/Qt/Qt-$QT_VERSION-debug
+./configure -prefix ~/devel/qt/qt-debug-$QT_VERSION -debug -opensource -nomake examples -nomake tests -confirm-license -opengl desktop
 make -j3
 echo 2 | sudo -S make install
 
@@ -20,6 +19,6 @@ cd ~/devel/qt/qt$QT_VERSION-release
 mv qt-everywhere-opensource-src-$QT_VERSION/* ./
 rm -r qt-everywhere-opensource-src-$QT_VERSION/
 
-echo yes | ./configure -release -opensource -nomake examples -nomake tests -prefix /opt/Qt/Qt-$QT_VERSION-release
+./configure -prefix ~/devel/qt/qt-release-$QT_VERSION -release -opensource -nomake examples -nomake tests -confirm-license -opengl desktop
 make -j3
 echo 2 | sudo -S make install
