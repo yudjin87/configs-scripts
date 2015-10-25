@@ -1,16 +1,25 @@
-dpkg --add-architecture i386
+# dpkg --add-architecture i386
 
 # Base instalations
-apt-get install libcurl3 virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion deluge cmake 
+apt-get install libcurl3 build-essential virtualbox-ose-dkms linux-headers-amd64 emacs bash-completion deluge cmake 
 
 # For VLC
 apt-get install libavformat54 vlc
 
 # For corporation usage:
-apt-get install subversion vpnc icedove 
+# apt-get install subversion vpnc icedove 
 
 # For HP ProBook laptop:
-apt-get install firmware-iwlwifi
+# apt-get install firmware-iwlwifi
+
+# For Lenovo G5045 laptop:
+# apt-get install firmware-linux-nonfree libgl1-mesa-dri xserver-xorg-video-ati
+
+# Chrome:
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub |  apt-key add -
+sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+apt-get update
+apt-get install google-chrome-stable
 
 # For Dropbox, Debian x64:
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - && ~/.dropbox-dist/dropboxd
