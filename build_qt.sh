@@ -2,6 +2,13 @@
 
 QT_VERSION=5.1.0
 
+# get basic dependencies
+sudo apt-get build-dep qt5-default
+# addressSanitizer="-sanitize address" # Optional - GCC 4.8 and newer and reasonably recent clang
+# threadSanitizer="-sanitize thread" # Optional - GCC 4.8 and newer and reasonably recent clang
+# platform="-platform linux-clang" # Optional - if you want to use clang instead of GCC
+# Then just append those to ./configure <...> ${addressSanitizer} ${threadSanitizer} ${platform} if needed
+ 
 # debug
 mkdir -p ~/devel/qt/qt$QT_VERSION-debug
 tar -zxvf ~/Downloads/qt-everywhere-opensource-src-$QT_VERSION.tar.gz -C ~/devel/qt/qt$QT_VERSION-debug
